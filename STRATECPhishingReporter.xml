@@ -42,7 +42,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://stratec-it.github.io/PhishingAddin/src/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands/commands.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -51,7 +51,7 @@
   <Permissions>ReadWriteMailbox</Permissions>
   
   <Rule xsi:type="RuleCollection" Mode="Or">
-    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="ReadOrEdit" />
   </Rule>
   <DisableEntityHighlighting>false</DisableEntityHighlighting>
 
