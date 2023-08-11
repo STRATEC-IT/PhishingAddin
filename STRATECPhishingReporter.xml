@@ -108,8 +108,8 @@
       </bt:Urls>
 
       <bt:ShortStrings>
-        <bt:String id="GroupLabel" DefaultValue="PhishingReporter Add-in"/>
-        <bt:String id="ActionButton.Label" DefaultValue="Report"/>
+        <bt:String id="GroupLabel" DefaultValue="STRATEC IT"/>
+        <bt:String id="ActionButton.Label" DefaultValue=""/>
         <bt:String id="SendAttached.Label" DefaultValue="Report as Attachment"/>
       </bt:ShortStrings>
 
