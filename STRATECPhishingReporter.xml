@@ -74,7 +74,7 @@
                 <!-- Each control provides a button forwardAsAttachment -->
 
                 <Control xsi:type="Button" id="ActionButton">
-                  <Label resid="ActionButton.Label"/>
+                  <Label resid="ActionButton.Label"/> 
                   <Supertip>
                     <Title resid="ActionButton.Label"/>
                     <Description resid="ActionButton.Tooltip"/>
@@ -109,7 +109,7 @@
 
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="STRATEC IT"/>
-        <bt:String id="ActionButton.Label" DefaultValue=""/>
+        <bt:String id="ActionButton.Label" DefaultValue="Report"/>
         <bt:String id="SendAttached.Label" DefaultValue="Report as Attachment"/>
       </bt:ShortStrings>
 

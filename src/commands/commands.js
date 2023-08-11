@@ -23,7 +23,7 @@ function sucessNotif(msg) {
   var id = "0";
   var details = {
     type: "informationalMessage",
-    icon: "Icon.16x16",
+    icon: "icon16",
     message: msg,
     persistent: false
   };
@@ -34,7 +34,7 @@ function failedNotif(msg) {
   var id = "0";
   var details = {
     type: "informationalMessage",
-    icon: "Icon.16x16",
+    icon: "icon16",
     message: msg,
     persistent: false
   };
@@ -70,7 +70,7 @@ function simpleForwardFunc(accessToken) {
   // Construct the REST URL to the current item.
   // Details for formatting the URL can be found at
   // https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations#get-messages.
-  var forwardUrl = Office.context.mailbox.restUrl + "/v2.0/me/messages/" + itemId + "/forward";
+  var forwardUrl = Office.context.mailbox.restUrl + "/v1.0/me/messages/" + itemId + "/forward";
 
   const forwardMeta = JSON.stringify({
     Comment: "FYI",
