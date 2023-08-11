@@ -67,7 +67,7 @@ function simpleForwardEmail() {
 	var item = Office.context.mailbox.item;
 	item_id = item.itemId;
 	mailbox = Office.context.mailbox;
-
+	sucessNotif("start simpleForwardEmail");
 	// The following string is a valid SOAP envelope and request for getting the properties
 	// of a mail item. Note that we use the item_id value (which we obtained above) to specify the item
 	// we are interested in.
@@ -93,7 +93,7 @@ function simpleForwardEmail() {
 		'    </GetItem>' +
 		'  </soap:Body>' +
 		'</soap:Envelope>';
-
+	sucessNotif("end simpleForwardEmail");
 	// The makeEwsRequestAsync method accepts a string of SOAP and a callback function
 	mailbox.makeEwsRequestAsync(soapToGetItemData, soapToGetItemDataCallback);
 }
