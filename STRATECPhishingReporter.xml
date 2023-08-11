@@ -19,13 +19,13 @@
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="STRATECPhishingReporter" />
   <Description DefaultValue="STRATECPhishingReporter"/>
-  <IconUrl DefaultValue="https://stratec-it.github.io/Phishing-Reporter/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://stratec-it.github.io/Phishing-Reporter/assets/icon-80.png"/>
+  <IconUrl DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-80.png"/>
   
-  <SupportUrl DefaultValue="https://github.com/stratec-it/Phishing-Reporter" />
+  <SupportUrl DefaultValue="https://github.com/stratec-it/PhishingAddin" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>https://github.com/stratec-it/Phishing-Reporter</AppDomain>
+    <AppDomain>https://github.com/stratec-it/PhishingAddin</AppDomain>
   </AppDomains>
   <!--End Basic Settings. -->
   
@@ -41,7 +41,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://stratec-it.github.io/Phishing-Reporter/src/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://stratec-it.github.io/PhishingAddin/src/taskpane/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -98,13 +98,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="icon16" DefaultValue="https://stratec-it.github.io/Phishing-Reporter/assets/icon-16.png"/>
-        <bt:Image id="icon32" DefaultValue="https://stratec-it.github.io/Phishing-Reporter/assets/icon-32.png"/>
-        <bt:Image id="icon80" DefaultValue="https://stratec-it.github.io/Phishing-Reporter/assets/icon-80.png"/>
+        <bt:Image id="icon16" DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-16.png"/>
+        <bt:Image id="icon32" DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-32.png"/>
+        <bt:Image id="icon80" DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-80.png"/>
       </bt:Images>
       
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://stratec-it.github.io/Phishing-Reporter/src/commands/commands.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands/commands.html"/>
       </bt:Urls>
 
       <bt:ShortStrings>
