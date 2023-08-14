@@ -120,17 +120,18 @@ var app = (function () {
             // The first thing we'll do is get an array of email addresses that the user
             // has typed into the To: text box.
             // We'll also get the comment that the user may have provided in the Comment: text box.
-            var toAddresses = document.getElementById("groupEmails").value;
-            var addresses = toAddresses.split(";");
-            var addressesSoap = "";
+            //var toAddresses = document.getElementById("groupEmails").value;
+            //var addresses = toAddresses.split(";");
+            //var addressesSoap = "";
 
             // The following loop build an XML fragment that we will insert into the SOAP message
-            for (var address = 0; address < addresses.length; address++) {
-                addressesSoap += "<t:Mailbox><t:EmailAddress>" + addresses[address] + "</t:EmailAddress></t:Mailbox>";
-            }
+            //for (var address = 0; address < addresses.length; address++) {
+            //    addressesSoap += "<t:Mailbox><t:EmailAddress>" + addresses[address] + "</t:EmailAddress></t:Mailbox>";
+            //}
 			
             var comment = document.getElementById("groupComment").value;
-			addressesSoap = "<t:Mailbox><t:EmailAddress>" + "m.schlehuber@stratec.com" + "</t:EmailAddress></t:Mailbox>";
+			var addressesSoap = "<t:Mailbox><t:EmailAddress>" + "m.schlehuber@stratec.com" + "</t:EmailAddress></t:Mailbox>";
+			
             // The following string is a valid SOAP envelope and request for forwarding
             // a mail item. Note that we use the item_id value (which we obtained in the click event handler)
             // to specify the item we are interested in,
