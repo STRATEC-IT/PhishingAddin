@@ -7,6 +7,8 @@ Office.onReady(() => {
   // If needed, Office.js is ready to be called
 });
 
+Office.actions.associate("simpleForwardEmail", simpleForwardEmail);
+
 function getGlobal() {
   return typeof self !== "undefined"
     ? self
