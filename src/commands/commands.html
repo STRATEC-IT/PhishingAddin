@@ -18,7 +18,36 @@
 </head>
 
 <body>
-  
+    <!-- Page content -->
+    <div id="content-main">
+        <div class="padding ms-font-xl">
+            <h3>Forwarder Sample</h3> 
+
+            <div style="float:left;width:10%;" class="ms-font-m">
+                To:&nbsp;
+            </div>
+            <div style="float:left;width:90%">
+                <input id="groupEmails" type="text" title="Enter addresses separated by semi-colons"/>
+            </div>
+            <div style="float:left;width:10%;" class="ms-font-m">
+                Comment:&nbsp;
+            </div>
+            <div style="float:left;width:90%">
+                <input id="groupComment" type="text" title="Enter your message to be forwarded with the orginal"/>
+            </div>
+        </div>
+        <button class="ms-Button ms-Button--hero" id="fowardToGroups">
+            <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+            <span class="ms-Button-label">Go!</span>
+            <span class="ms-Button-description">Forward the email</span>
+        </button>
+
+    </div>
+    <div id="content-footer">
+        <div class="padding ms-font-m">
+            <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkId=276814">Find more samples online...</a>
+        </div>
+    </div>
 </body>
 
 </html>

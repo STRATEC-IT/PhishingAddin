@@ -8,7 +8,12 @@ Office.onReady(() => {
   
 });
 
-
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            app.initialize();
+            $('#fowardToGroups').click(function () { simpleForwardEmail(); });
+        });
+    };
 
 function getGlobal() {
   return typeof self !== "undefined"
@@ -198,6 +203,8 @@ function soapToForwardItemCallback(asyncResult) {
 		}
 	}
 }
+
+
 
 Office.actions.associate("simpleForwardEmail", simpleForwardEmail);
 
