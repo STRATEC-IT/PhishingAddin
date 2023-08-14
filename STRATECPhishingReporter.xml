@@ -102,7 +102,7 @@
                     <bt:Image size="80" resid="icon80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="readTaskPaneUrl" />
+                    <SourceLocation resid="Commands.Url" />
                   </Action>
                 </Control>
 				

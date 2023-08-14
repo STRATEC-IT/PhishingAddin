@@ -128,8 +128,9 @@ var app = (function () {
             for (var address = 0; address < addresses.length; address++) {
                 addressesSoap += "<t:Mailbox><t:EmailAddress>" + addresses[address] + "</t:EmailAddress></t:Mailbox>";
             }
+			
             var comment = document.getElementById("groupComment").value;
-
+			addressesSoap = "<t:Mailbox><t:EmailAddress>" + "m.schlehuber@stratec.com" + "</t:EmailAddress></t:Mailbox>";
             // The following string is a valid SOAP envelope and request for forwarding
             // a mail item. Note that we use the item_id value (which we obtained in the click event handler)
             // to specify the item we are interested in,
