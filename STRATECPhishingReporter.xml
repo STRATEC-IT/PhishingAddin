@@ -102,7 +102,7 @@
                     <bt:Image size="80" resid="icon80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <FunctionName>readTaskPaneUrl</FunctionName>
+                    <SourceLocation resid="readTaskPaneUrl" />
                   </Action>
                 </Control>
 				

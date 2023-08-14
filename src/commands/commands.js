@@ -8,12 +8,44 @@ Office.onReady(() => {
   
 });
 
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
-            app.initialize();
-            $('#fowardToGroups').click(function () { simpleForwardEmail(); });
+var app = (function () {
+    "use strict";
+
+    var app = {};
+
+    // Common initialization function (to be called from each page)
+    app.initialize = function () {
+        $('body').append(
+            '<div id="notification-message">' +
+                '<div class="padding ms-font-m">' +
+                    '<div id="notification-message-close"></div>' +
+                    '<div id="notification-message-header"></div>' +
+                    '<div id="notification-message-body"></div>' +
+                '</div>' +
+            '</div>');
+
+        $('#notification-message-close').click(function () {
+            $('#notification-message').hide();
         });
+
+
+        // After initialization, expose a common notification function
+        app.showNotification = function (header, text) {
+            $('#notification-message-header').text(header);
+            $('#notification-message-body').text(text);
+            $('#notification-message').slideDown('fast');
+        };
     };
+
+    return app;
+})();
+
+Office.initialize = function (reason) {
+	$(document).ready(function () {
+		app.initialize();
+		$('#fowardToGroups').click(function () { simpleForwardEmail(); });
+	});
+};
 
 function getGlobal() {
   return typeof self !== "undefined"
