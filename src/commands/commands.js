@@ -5,9 +5,10 @@
 /* global global, Office, self, window */
 Office.onReady(() => {
   // If needed, Office.js is ready to be called
+  
 });
 
-Office.actions.associate("simpleForwardEmail", simpleForwardEmail);
+
 
 function getGlobal() {
   return typeof self !== "undefined"
@@ -197,4 +198,8 @@ function soapToForwardItemCallback(asyncResult) {
 		}
 	}
 }
+
+Office.actions.associate("simpleForwardEmail", simpleForwardEmail);
+
+
 
