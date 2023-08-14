@@ -100,7 +100,7 @@ var app = (function () {
         var xmlDoc;
 
         if (asyncResult.error != null) {
-            app.showNotification("EWS Status", asyncResult.error.message);            
+            app.showNotification("Status", asyncResult.error.message);            
         }
         else {
             var response = asyncResult.value;
@@ -175,7 +175,7 @@ var app = (function () {
         var xmlDoc;
 
         if (asyncResult.error != null) {
-            app.showNotification("EWS Status", asyncResult.error.message);
+            app.showNotification("Status", asyncResult.error.message);
         }
         else {
             var response = asyncResult.value;
@@ -195,10 +195,10 @@ var app = (function () {
             // entered incorrectly --- try it and see for yourself what happens!!)
             var result = xmlDoc.getElementsByTagName("m:ResponseCode")[0].textContent;
             if (result == "NoError") {
-                app.showNotification("EWS Status", "Success!");
+                app.showNotification("Status", "The phishing email was successfully delivered!");
             }
             else {
-                app.showNotification("EWS Status", "The following error code was recieved: " + result);
+                app.showNotification("Status", "The following error code was recieved: " + result);
             }
         }
     }

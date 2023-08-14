@@ -17,8 +17,8 @@
   <ProviderName>STRATEC IT Infrastructure</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="STRATECPhishingReporter" />
-  <Description DefaultValue="STRATECPhishingReporter"/>
+  <DisplayName DefaultValue="STRATEC Phishing Reporter" />
+  <Description DefaultValue="STRATEC Phishing Reporter"/>
   <IconUrl DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-80.png"/>
   
@@ -88,24 +88,7 @@
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="Commands.Url" />
                   </Action>
-                </Control>
-
-				<Control xsi:type="Button" id="SendAttached">
-                  <Label resid="SendAttached.Label"/> 
-                  <Supertip>
-                    <Title resid="SendAttached.Label"/>
-                    <Description resid="SendAttached.Tooltip"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="icon16"/>
-                    <bt:Image size="32" resid="icon32"/>
-                    <bt:Image size="80" resid="icon80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="Commands.Url" />
-                  </Action>
-                </Control>
-				
+                </Control>		
 				
               </Group>
             </OfficeTab>
@@ -123,18 +106,15 @@
       
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands/commands.html"/>
-		<bt:Url id="readTaskPaneUrl" DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands/commands.html" />
       </bt:Urls>
 
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="STRATEC IT"/>
         <bt:String id="ActionButton.Label" DefaultValue="Report"/>
-        <bt:String id="SendAttached.Label" DefaultValue="Report as Attachment"/>
       </bt:ShortStrings>
 
       <bt:LongStrings>
         <bt:String id="ActionButton.Tooltip" DefaultValue="Report this email to STRATEC IT"/>
-        <bt:String id="SendAttached.Tooltip" DefaultValue="Report this email to STRATEC IT as attachment"/>
       </bt:LongStrings>
       
     </Resources>
