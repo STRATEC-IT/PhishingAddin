@@ -382,21 +382,5 @@ function escapeHTML(htmlStr) {
 	
 })();
 
-// Office.actions.associate("simpleForwardEmail", simpleForwardEmail);
-Office.onReady(function() {
-    // Office is ready.
-    $(document).ready(function () {
-        // The document is ready.
-		app.initialize();
-		$('#report-eng').click(function () { sendNow(); });
-		$('#report-ger').click(function () { sendNow(); });
-		$('#changeLanguage-DE').click(function () { changeLanguage(); });
-		$('#changeLanguage-EN').click(function () { changeLanguage(); });
-		$('#delete-eng1').click(function () { deleteMail(); });
-		$('#delete-eng2').click(function () { deleteMail(); });
-		$('#delete-ger1').click(function () { deleteMail(); });
-		$('#delete-ger2').click(function () { deleteMail(); });
-    });
-});
 
 
