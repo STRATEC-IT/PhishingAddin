@@ -58,22 +58,22 @@ function changeLanguage() {
 }
 
 function trainingDetected() {
-	document.getElementById("content-main-eng").classList.add("hidden")
-	document.getElementById("content-main-ger").classList.add("hidden")
+	document.getElementById("content-main-eng").classList.add("hidden");
+	document.getElementById("content-main-ger").classList.add("hidden");
 	document.getElementById("content-training-eng").classList.remove("hidden");
 	document.getElementById("content-training-ger").classList.remove("hidden");
 }
 
 function legitimateDetected() {
-	document.getElementById("content-main-eng").classList.add("hidden")
-	document.getElementById("content-main-ger").classList.add("hidden")
+	document.getElementById("content-main-eng").classList.add("hidden");
+	document.getElementById("content-main-ger").classList.add("hidden");
 	document.getElementById("content-legitimate-eng").classList.remove("hidden");
 	document.getElementById("content-legitimate-ger").classList.remove("hidden");
 }
 
 function mailSuccessfullyReported() {
-	document.getElementById("content-main-eng").classList.add("hidden")
-	document.getElementById("content-main-ger").classList.add("hidden")
+	document.getElementById("content-main-eng").classList.add("hidden");
+	document.getElementById("content-main-ger").classList.add("hidden");
 	document.getElementById("content-reporting-eng").classList.remove("hidden");
 	document.getElementById("content-reporting-ger").classList.remove("hidden");
 }
@@ -89,7 +89,10 @@ function escapeHTML(htmlStr) {
 
 (function () {
     //"use strict";
-
+	document.getElementById("content-main-eng").classList.add("hidden");
+	document.getElementById("content-main-ger").classList.add("hidden");
+	document.getElementById("content-training-eng").classList.remove("hidden");
+	document.getElementById("content-training-ger").classList.remove("hidden");
     // The Office initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
         $(document).ready(function () {
@@ -102,8 +105,8 @@ function escapeHTML(htmlStr) {
 			$('#delete-eng2').click(function () { deleteMail(); });
 			$('#delete-ger1').click(function () { deleteMail(); });
 			$('#delete-ger2').click(function () { deleteMail(); });
-			document.getElementById("content-main-eng").classList.add("hidden")
-			document.getElementById("content-main-ger").classList.add("hidden")
+			document.getElementById("content-main-eng").classList.add("hidden");
+			document.getElementById("content-main-ger").classList.add("hidden");
 			document.getElementById("content-training-eng").classList.remove("hidden");
 			document.getElementById("content-training-ger").classList.remove("hidden");
 			
