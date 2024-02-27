@@ -105,7 +105,6 @@ function escapeHTML(htmlStr) {
 			$('#delete-eng2').click(function () { deleteMail(); });
 			$('#delete-ger1').click(function () { deleteMail(); });
 			$('#delete-ger2').click(function () { deleteMail(); });
-			
         });
     };
   
@@ -397,10 +396,6 @@ Office.onReady(function() {
 		$('#delete-eng2').click(function () { deleteMail(); });
 		$('#delete-ger1').click(function () { deleteMail(); });
 		$('#delete-ger2').click(function () { deleteMail(); });
-		document.getElementById("content-main-eng").classList.add("hidden");
-		document.getElementById("content-main-ger").classList.add("hidden");
-		document.getElementById("content-training-eng").classList.remove("hidden");
-		document.getElementById("content-training-ger").classList.remove("hidden");
     });
 });
 
