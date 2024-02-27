@@ -111,7 +111,7 @@
 
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="STRATEC IT"/>
-        <bt:String id="ActionButton.Label" DefaultValue="Report Phishing"/>
+        <bt:String id="ActionButton.Label" DefaultValue="Report Github"/>
       </bt:ShortStrings>
 
       <bt:LongStrings>
