@@ -92,6 +92,22 @@ function escapeHTML(htmlStr) {
 
 (function () {
     //"use strict";
+	
+    // The Office initialize function must be run each time a new page is loaded
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            app.initialize();
+            $('#report-eng').click(function () { sendNow(); });
+			$('#report-ger').click(function () { sendNow(); });
+			$('#changeLanguage-DE').click(function () { changeLanguage(); });
+			$('#changeLanguage-EN').click(function () { changeLanguage(); });
+			$('#delete-eng1').click(function () { deleteMail(); });
+			$('#delete-eng2').click(function () { deleteMail(); });
+			$('#delete-ger1').click(function () { deleteMail(); });
+			$('#delete-ger2').click(function () { deleteMail(); });
+			
+        });
+    };
   
     // This function handles the click event of the sendNow button.
     // It retrieves the current mail item, so that we can get its itemId property.
@@ -368,23 +384,3 @@ function escapeHTML(htmlStr) {
 })();
 
 // Office.actions.associate("simpleForwardEmail", simpleForwardEmail);
-
-Office.onReady(function() {
-    // Office is ready.
-    $(document).ready(function () {
-        // The document is ready.
-		app.initialize();
-		$('#report-eng').click(function () { sendNow(); });
-		$('#report-ger').click(function () { sendNow(); });
-		$('#changeLanguage-DE').click(function () { changeLanguage(); });
-		$('#changeLanguage-EN').click(function () { changeLanguage(); });
-		$('#delete-eng1').click(function () { deleteMail(); });
-		$('#delete-eng2').click(function () { deleteMail(); });
-		$('#delete-ger1').click(function () { deleteMail(); });
-		$('#delete-ger2').click(function () { deleteMail(); });
-		document.getElementById("content-main-eng").classList.add("hidden");
-		document.getElementById("content-main-ger").classList.add("hidden");
-		document.getElementById("content-training-eng").classList.remove("hidden");
-		document.getElementById("content-training-ger").classList.remove("hidden");
-    });
-});
