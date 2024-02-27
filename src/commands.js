@@ -89,10 +89,6 @@ function escapeHTML(htmlStr) {
 
 (function () {
     //"use strict";
-	document.getElementById("content-main-eng").classList.add("hidden");
-	document.getElementById("content-main-ger").classList.add("hidden");
-	document.getElementById("content-training-eng").classList.remove("hidden");
-	document.getElementById("content-training-ger").classList.remove("hidden");
     // The Office initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
         $(document).ready(function () {
