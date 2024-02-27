@@ -46,6 +46,56 @@
     padding: 15px;
 }
 
+.flag {
+	position: absolute;
+	top: 200px;
+	right: 25px;
+	max-width: 15%;
+}
+
+input[type=checkbox] {  
+display: none;  
+}   
+.checkbox label:before {  
+border-radius: 1px;  
+border: 1px solid black
+}  
+input[type=checkbox]:checked + label:before {  
+content: "X";  
+text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+font-size: 22px;  
+color: #000000;  
+text-align: center;  
+line-height:19px;
+border: 1px solid black
+}  
+label {  
+display: inline-block;  
+cursor: pointer;  
+position: relative;  
+padding-left: 25px;  
+margin-right: 15px;  
+font-size: 16px;  
+font-weight: bold;
+}  
+label:before {  
+content: "";  
+display: inline-block;  
+
+
+width: 15px;  
+height: 15px;  
+
+margin-right: 10px;  
+position: absolute;  
+left: 0;  
+bottombottom: 1px;  
+background-color: #eee;  
+box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}     
+
+
+
 #notification-message {
     background-color: #818285;
     color: #fff;
@@ -69,7 +119,7 @@
 }
 
 #notification-message-close {
-    background-image: url("https://stratec-it.github.io/PhishingAddin/assets/Close.png");
+    background-image: url("https://fsp.stratec.com/Transfer/permanent/PhishingAddin/assets/Close.png");
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
@@ -79,3 +129,10 @@
     cursor: pointer;
 }
 
+.hidden {
+   display: none;
+}
+
+.invisible {
+   visibility: hidden;
+}

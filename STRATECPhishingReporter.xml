@@ -10,23 +10,24 @@
   <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
 
   <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
-  <Id>e641036f-120c-42da-ace8-28259f43b858</Id>
+  <Id>e641036f-120c-42da-ace8-18259243b860</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
   <ProviderName>STRATEC IT Infrastructure</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="STRATEC Phishing Reporter" />
-  <Description DefaultValue="STRATEC Phishing Reporter"/>
+  <DisplayName DefaultValue="STRATEC Phishing Reporter Github" />
+  <Description DefaultValue="STRATEC Phishing Reporter Github"/>
   <IconUrl DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://stratec-it.github.io/PhishingAddin/assets/icon-80.png"/>
   
-  <SupportUrl DefaultValue="https://github.com/stratec-it/PhishingAddin" />
+  <SupportUrl DefaultValue="https://stratec-intra1.intern.stratec.com/de/" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>https://github.com/stratec-it/PhishingAddin</AppDomain>
-	<AppDomain>https://stratec-it.github.io/PhishingAddin</AppDomain>
+    <AppDomain>https://stratec-intra1.intern.stratec.com/</AppDomain>
+	<AppDomain>https://stratec-it.github.io/PhishingAddin/</AppDomain>
+	<AppDomain>https://stratec-it.github.io/</AppDomain>
   </AppDomains>
   <!--End Basic Settings. -->
   
@@ -42,7 +43,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands/commands.html"/>
+        <SourceLocation DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -105,12 +106,12 @@
       </bt:Images>
       
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands/commands.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://stratec-it.github.io/PhishingAddin/src/commands.html"/>
       </bt:Urls>
 
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="STRATEC IT"/>
-        <bt:String id="ActionButton.Label" DefaultValue="Report"/>
+        <bt:String id="ActionButton.Label" DefaultValue="Report Phishing"/>
       </bt:ShortStrings>
 
       <bt:LongStrings>
